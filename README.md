@@ -1,0 +1,2 @@
+# jstempl
+Pure javascript templates
