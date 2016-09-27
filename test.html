@@ -8,4 +8,17 @@
 
 </body>
 <script src="lib/jstempl.js"></script>
+<script>
+
+    document.body.appendChild(jstempl.toHtml({span: 'some text'}));
+    document.body.appendChild(jstempl.toHtml({
+        div: [{span: 'a'}, {
+            span: {
+                text: 'b',
+                class: ['a', 'b'],
+                children: [{a: {text: 'ooo', href: 'http://google.com'}}, {b: 'RRRR'}]
+            }
+        }]
+    }));
+</script>
 </html>
